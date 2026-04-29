@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SWOT - João Rito</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <style>
+        .swot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 2rem;
+        }
+        .swot-card {
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid rgba(0,0,0,0.08);
+        }
+        .swot-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .swot-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .swot-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .swot-list li {
+            font-size: 14px;
+            line-height: 1.6;
+            padding-left: 16px;
+            position: relative;
+        }
+        .swot-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            font-size: 12px;
+        }
+        .swot-s { background: #EAF3DE; }
+        .swot-s .swot-label { color: #3B6D11; }
+        .swot-s .swot-title { color: #27500A; }
+        .swot-s .swot-list li { color: #3B6D11; }
+        .swot-s .swot-list li::before { color: #639922; }
+
+        .swot-w { background: #FAECE7; }
+        .swot-w .swot-label { color: #993C1D; }
+        .swot-w .swot-title { color: #712B13; }
+        .swot-w .swot-list li { color: #993C1D; }
+        .swot-w .swot-list li::before { color: #D85A30; }
+
+        .swot-o { background: #E6F1FB; }
+        .swot-o .swot-label { color: #185FA5; }
+        .swot-o .swot-title { color: #0C447C; }
+        .swot-o .swot-list li { color: #185FA5; }
+        .swot-o .swot-list li::before { color: #378ADD; }
+
+        .swot-t { background: #FAEEDA; }
+        .swot-t .swot-label { color: #854F0B; }
+        .swot-t .swot-title { color: #633806; }
+        .swot-t .swot-list li { color: #854F0B; }
+        .swot-t .swot-list li::before { color: #BA7517; }
+
+        @media (max-width: 768px) {
+            .swot-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
+</head>
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="page" class="s-pagewrap">
+
+        <header class="s-header">
+            <div class="row s-header__inner width-sixteen-col">
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <span style="font-weight:bold; color: var(--color-1);">Home</span>
+                        </a>
+                    </div>
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div>
+
+                <nav class="s-header__nav">
+                    <ul class="s-header__menu-links">
+                        <li><a href="about.html">Sobre mim</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="certificados.html">Certificados</a></li>
+                        <li class="current"><a href="swot.html">SWOT</a></li>
+                        <li><a href="contact.html">Contactos</a></li>
+                    </ul>
+                    <div class="s-header__contact">
+                        <a href="contact.html" class="btn btn--primary s-header__contact-btn">Vamos trabalhar juntos</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="content" class="s-content">
+
+            <section class="s-pageheader pageheader">
+                <div class="row">
+                    <div class="column xl-12">
+                        <h1 class="page-title">
+                            <span class="page-title__small-type text-pretitle">Análise SWOT</span>
+                            Os meus pontos fortes, fraquezas, oportunidades e ameaças.
+                        </h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s-pagecontent pagecontent">
+
+                <div class="row pageintro">
+                    <div class="column xl-6 lg-12">
+                        <h2 class="text-display-title">Uma análise honesta sobre mim.</h2>
+                    </div>
+                    <div class="column xl-6 lg-12 u-flexitem-x-right">
+                        <p class="lead">
+                        Uma reflexão pessoal sobre o que me define, o que preciso de melhorar
+                        e o contexto em que me encontro profissionalmente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row width-narrower pagemain">
+                    <div class="column xl-12">
+
+                        <div class="swot-grid">
+
+                            <div class="swot-card swot-s">
+                                <div class="swot-label">Internal</div>
+                                <div class="swot-title">Forças</div>
+                                <ul class="swot-list">
+                                    <li>Certificados de inglês e francês</li>
+                                    <li>Gosto pelo trabalho em equipa</li>
+                                    <li>Capacidade de trabalhar sob pressão</li>
+                                    <li>Projetos académicos desenvolvidos</li>
+                                    <li>Experiência profissional anterior que desenvolveu soft skills</li>
+                                    <li>Proatividade e resiliência</li>
+                                </ul>
+                            </div>
+
+                            <div class="swot-card swot-w">
+                                <div class="swot-label">Internal</div>
+                                <div class="swot-title">Fraquezas</div>
+                                <ul class="swot-list">
+                                    <li>Programação a necessitar de desenvolvimento</li>
+                                    <li>Conhecimento de sistemas ainda limitado</li>
+                                    <li>Entrada tardia na área da informática</li>
+                                    <li>Falta de experiência profissional em TI</li>
+                                </ul>
+                            </div>
+
+                            <div class="swot-card swot-o">
+                                <div class="swot-label">External</div>
+                                <div class="swot-title">Oportunidades</div>
+                                <ul class="swot-list">
+                                    <li>Estágios disponíveis na área</li>
+                                    <li>Plataformas gratuitas de aprendizagem (HackTheBox, TryHackMe)</li>
+                                    <li>Crescimento do mercado de cibersegurança em Portugal</li>
+                                    <li>Networking em eventos como a TecWeb</li>
+                                </ul>
+                            </div>
+
+                            <div class="swot-card swot-t">
+                                <div class="swot-label">External</div>
+                                <div class="swot-title">Ameaças</div>
+                                <ul class="swot-list">
+                                    <li>Mercado competitivo com candidatos mais experientes</li>
+                                    <li>Rápida evolução tecnológica exige aprendizagem contínua</li>
+                                    <li>IA a automatizar funções de programação júnior</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section id="cta" class="s-cta">
+            <div class="row row-x-center text-center">
+                <div class="column xl-8 lg-12">
+                    <div class="s-cta__content">
+                        <h2 class="text-display-title">Vamos trabalhar juntos?</h2>
+                        <p class="lead">Estou disponível para projetos, colaborações ou simplesmente para trocar ideias sobre tecnologia e cibersegurança.</p>
+                        <a href="contact.html" class="btn btn--primary">Contacta-me.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="s-footer">
+            <div class="row s-footer__content">
+                <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">
+                    <h3>João Rito</h3>
+                    <p>Estudante de Engenharia Informática na Universidade Lusófona, com foco em Cibersegurança. Situado em Lisboa, Portugal.</p>
+                </div>
+                <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
+                    <h3>Site Links</h3>
+                    <ul class="link-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="about.html">Sobre mim</a></li>
+                        <li><a href="certificados.html">Certificados</a></li>
+                        <li><a href="swot.html">SWOT</a></li>
+                        <li><a href="contact.html">Contactos</a></li>
+                    </ul>
+                </div>
+
+                <div class="row s-footer__bottom">
+                    <div class="column xl-6 lg-12"></div>
+                    <div class="column xl-6 lg-12">
+                        <p class="ss-copyright">
+                            <span>© Copyright Monica 2022</span>
+                            <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                        </p>
+                    </div>
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
